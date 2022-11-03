@@ -9,9 +9,7 @@ from .services import location_image, validate_image, custom_validator
 
 
 class User(AbstractBaseUser):
-    choices = (
 
-    )
     phone_regex = RegexValidator(regex=r'^998[0-9]{2}[0-9]{7}$',
                                  message="Faqat O`zbekiston mobil raqamlari tasdiqlanadi('+' belgisiz!)")
     username = None
